@@ -39,7 +39,11 @@ THIRD_PARTY_APPS = [
     "celery",
 ]
 
-LOCAL_APPS = ["smartcompost.accounts.apps.AccountsConfig"]
+LOCAL_APPS = [
+    "smartcompost.accounts.apps.AccountsConfig",
+    "smartcompost.wastes",
+    "smartcompost.tags",
+]
 
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
 
